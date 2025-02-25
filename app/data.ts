@@ -32,23 +32,23 @@ export const PROJECTS: Project[] = [
     description:
       'Online store built with Next.js and Tailwind CSS, featuring WhatsApp integration for order processing and direct business communication.',
     link: 'https://sitemoraembalagens.vercel.app/',
-    video: 'ecommerce.mp4',
+    video: `https://ik.imagekit.io/5fi0iwob9/ecommerce.mp4?updatedAt=1740419323535`,
     id: 'project1',
   },
   {
     name: 'Custom Bag Design Platform',
     description: 'Web app for designing customized paper bags. Generates production-ready art files and automates order management/WhatsApp communication. Built with Next.js, Tailwind CSS, PostgreSQL, and Fabric.js.',
-    link: 'https://mora-embalagens.vercel.app/',
-    video: 'bags.mp4',
+    link: '',
+    video: 'https://ik.imagekit.io/5fi0iwob9/bags.mp4?updatedAt=1740419322535',
     id: 'project2',
   },
- //{
-  //  name: 'Crie tu site landing page',
-    //description: 'Software development site offering one-time payment solutions for custom websites, e-commerce, and systems, with responsive design, SEO, and payment integrations.',
-    //link: 'https://mora-embalagens.vercel.app/',
-    //video: '/videos/bags.mp4',
-    //id: 'project3',
-  //},
+  {
+    name: 'Crie tu site landing page',
+    description: 'Software development site offering one-time payment solutions for custom websites, e-commerce, and systems, with responsive design, SEO, and payment integrations.',
+    link: 'https://mora-embalagens.vercel.app/',
+    video: 'https://ik.imagekit.io/5fi0iwob9/landing.mp4?updatedAt=1740485232937',
+    id: 'project3',
+  },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [

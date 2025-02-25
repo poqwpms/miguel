@@ -45,6 +45,8 @@ type ProjectVideoProps = {
 }
 
 function ProjectVideo({ src }: ProjectVideoProps) {
+  const isYouTube = src.includes('youtube.com/embed')
+
   return (
     <MorphingDialog
       transition={{
@@ -54,23 +56,39 @@ function ProjectVideo({ src }: ProjectVideoProps) {
       }}
     >
       <MorphingDialogTrigger>
-        <video
-          src={src}
-          autoPlay
-          loop
-          muted
-          className="aspect-video w-full cursor-zoom-in rounded-xl"
-        />
-      </MorphingDialogTrigger>
-      <MorphingDialogContainer>
-        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+        {isYouTube ? (
+          <iframe
+            src={src}
+            className="aspect-video w-full cursor-zoom-in rounded-xl"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          />
+        ) : (
           <video
             src={src}
             autoPlay
             loop
             muted
-            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
+        )}
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+          {isYouTube ? (
+            <iframe
+              src={src}
+              className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+              allowFullScreen
+            />
+          ) : (
+            <video
+              src={src}
+              autoPlay
+              loop
+              muted
+              className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            />
+          )}
         </MorphingDialogContent>
         <MorphingDialogClose
           className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
