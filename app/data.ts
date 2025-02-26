@@ -38,14 +38,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'Custom Bag Design Platform',
     description: 'Web app for designing customized paper bags. Generates production-ready art files and automates order management/WhatsApp communication. Built with Next.js, Tailwind CSS, PostgreSQL, and Fabric.js.',
-    link: '',
+    link: 'https://mora-embalagens.vercel.app/',
     video: 'https://ik.imagekit.io/5fi0iwob9/bags.mp4?updatedAt=1740419322535',
     id: 'project2',
   },
   {
     name: 'Crie tu site landing page',
     description: 'Software development site offering one-time payment solutions for custom websites, e-commerce, and systems, with responsive design, SEO, and payment integrations.',
-    link: 'https://mora-embalagens.vercel.app/',
+    link: 'https://crietu.site',
     video: 'https://ik.imagekit.io/5fi0iwob9/landing.mp4?updatedAt=1740485232937',
     id: 'project3',
   },
