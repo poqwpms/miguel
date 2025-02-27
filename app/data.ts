@@ -49,6 +49,13 @@ export const PROJECTS: Project[] = [
     video: 'https://ik.imagekit.io/5fi0iwob9/landing.mp4?updatedAt=1740485232937',
     id: 'project3',
   },
+  {
+    name: 'Tremunda - Astrology & Tarot Platform',
+    description: 'A mystical online platform offering tarot readings and astrology services. Consultations via WhatsApp, natal chart calculators, and an eBook store. Built with Next.js and Tailwind CSS.',
+    link: 'https://tremunda.vercel.app/',
+    video: 'https://ik.imagekit.io/5fi0iwob9/tarot.mp4?updatedAt=17406595951492',
+    id: 'project4'
+  }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
